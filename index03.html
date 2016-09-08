@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax异步请求</title>
+    <style>
+        table{border-collapse:collapse;}
+        tr,td{border:1px solid #000}
+    </style>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript">
+        window.onload=function(){
+            var oBtn=document.getElementById("button");
+            oBtn.onclick= function () {
+               $.getJSON( "table/SHOP.json",function(jsObj){
+                            var content="<table>";
+                            for(var i=0;i<jsObj.length;i++){
+                                content+="<tr><td>"+jsObj[i].id+"</td>";
+                                content+="<td>"+jsObj[i].name+"</td>";
+                                content+="<td>"+jsObj[i].price+"</td>";
+                                content+="<td><img src='images/"+jsObj[i].pic+"'></td></tr>";
+
+                            }
+                            content+="</table>";
+                            document.getElementById("text").innerHTML=content;
+                        }
+                )
+            }
+        }
+    </script>
+</head>
+<body>
+<button type="button" id="button">按钮</button>
+<div id="text"></div>
+</body>
+</html>
