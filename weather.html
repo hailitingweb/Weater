@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气预报</title>
+    <link rel="stylesheet" type="text/css" href="css/weater.css">
+    <script type="text/javascript" src="js/wicon.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+
+</head>
+<body>
+<div class="contain" id="contain">
+    <p class="title">天气查询</p>
+    <div class="main" id="title">
+        <div class="bac"></div>
+        <div class="bac02"></div>
+        <!--sigin-in  log-in-->
+        
+        <div class="log-in" id="getIn">
+            <h1>天气查询</h1>
+            <img src="images/gps.png" id="pst">
+            <form method="get" class="form">
+                <span id="chsCity"></span>
+                <input type="text" value="杭州" id="oInp"/>
+                <input type="button" value="查询" id="oBtn"/>
+            </form>
+            <img src="images/china.png">
+            <div class="showDiv" id="showDiv">
+                <h5>浙江</h5>
+                <p>杭州</p>
+                <i>西湖区</i>
+            </div>
+            <div id="oLoding"><img src="images/loading.gif"></div>
+
+        </div>
+        <div id="oDivShov" class="wthDiv"></div>
+        <div id="oDiv" class="wthDiv"></div>
+    </div>
+    <a href="#title" class="toptitle"></a>
+</div>
+<script type="text/javascript" src="js/move.js">置顶</script>
+</body>
+</html>

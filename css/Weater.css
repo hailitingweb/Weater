@@ -1,0 +1,387 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+div {
+    transition: all 1.5s ease;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+   /* background: #000;*/
+    color: #744a31;
+    zoom: 2;
+}
+
+input {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+.toptitle{
+    position: absolute;
+    bottom: 2px;
+    right: 1px;
+    width: 10px;
+    height: 20px;
+    background: #fff;
+}
+.contain {
+    overflow: hidden;
+    position: relative;
+    width: 188px;
+    height: 333px;
+    margin: 40px auto 0;
+    box-shadow: 0 0 2px #444;
+}
+.main{
+    width: 188px;
+    height: 333px;
+    position: relative;
+}
+.bac {
+    width: 188px;
+    height: 333px;
+    background: #999 url("../images/tiankong.jpg");
+    background-size: 180% 100%;
+    position: fixed;
+    top: 40px;
+    z-index: -10;
+}
+.bac02{
+    width: 188px;
+    height: 333px;
+    background: #999 url("../images/24-1105140I31849.jpg");
+    background-size: 160% 100%;
+    position: fixed;
+    top: 40px;
+    z-index: -10;
+    opacity: .8;
+}
+.bc{
+    width: 250px;
+    height: 500px;
+    opacity: 0;
+}
+#oLoding {
+    display: none;
+}
+
+.wthDiv ul {
+    /*display: none;*/
+}
+
+.wthDiv ul li {
+    float: left;
+    background: #6E6E6E;
+    margin: 20px 1px 0;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 8px 3px;
+    border-radius: 4px;
+}
+
+.contain form {
+    position: relative;
+}
+
+.contain input {
+    font-size: 11px;
+    line-height: 20px;
+    height: 20px; border-radius: 2px;
+}
+
+.contain input#oInp {
+       padding-left: 5px;
+    width: 115px;
+    background: #E9F1E9;
+    color: #3A0505;
+   
+}
+
+form {
+    font-size: 0;
+    width: 150px
+}
+
+input#oBtn {
+    width: 30px;
+    color: #fff;
+    background: #6C6C6C;
+}
+
+.contain .sigin-in {
+    width: 160px;
+    position: absolute;
+    top: 50px;
+    left: 14px;
+    background: #fff;
+    border-radius: 4px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 100px #FFFFFF inset;
+    z-index: 10;
+}
+
+.sigin-in h1 {
+    font-size: 12px;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #744a31;
+}
+
+.sigin-in form {
+    left: 4px;
+}
+
+.sigin-in form span {
+    right: 50px;
+}
+
+.sigin-in img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.sigin-in #pst {
+    display: none;
+}
+
+.contain #chsCity {
+    display: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ACCBD4;
+    position: absolute;
+    top: 7px;
+    right: 44px;
+}
+
+.contain .log-in #chsCity {
+}
+
+.log-in {
+    height: 20px;
+
+    width: 188px;
+    color: #FEFEEB;
+    
+}
+
+.log-in > img {
+    display: none;
+}
+
+p.title {
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    position: fixed;
+    width: 183px;
+   background: rgba(12, 13, 13, .8);
+    line-height: 20px;
+    padding-left: 5px;
+    z-index: 5;
+    color: #FFFFFF;
+}
+.log-in h1 {
+ display: none;
+}
+.contain .log-in form {
+
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -120px;
+    font-size: 0;
+}
+
+.contain .log-in .formmouse {
+    display: block;
+}
+
+.log-in #oInp {
+    width: 80px;
+}
+
+.log-in #pst {
+    display: block;
+    height: 15px;
+    float: right;
+    margin: 2px 5px;
+    position: relative;
+    z-index: 20;
+}
+
+.wendu {
+    font-size: 45px;
+}
+
+.citydiv {
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    background: #eee;
+    padding: 5px;
+    top: 50px;
+    border-radius: 5px;
+    transition: all .5s ease;
+    box-shadow: 0 0 6px #444;
+}
+
+.citydiv ul li {
+    font-size: 12px;
+    display: inline-block;
+    padding: 3px;
+}
+
+.citydiv ul li:hover {
+    background: #fff;
+    color: #2CBA34;
+}
+
+.citydiv .oli {
+    background: #fff;
+    color: #2CBA34;
+    display: block !important;
+}
+
+.citydiv ul li span {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.citydiv ul .oli span {
+    display: block;
+    position: relative;
+    color: #39373D;
+}
+
+.citydiv ul .oli span p {
+    display: inline-block;
+    padding: 4px;
+    font-size: 8px;
+    line-height: 10px;
+}
+
+.citydiv ul li h2 {
+    font-size: 10px;
+    line-height: 11px;
+    font-weight: normal;
+}
+
+.citydiv ul .oli h2 {
+    line-height: 18px;
+}
+
+.citydiv ul .oli span p:hover {
+    background: #ABC497;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.showDiv {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    text-align: right;
+}
+
+.showDiv h5 {
+    color: #E0DAB3;
+}
+
+.showDiv p {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.wthDiv {
+    color: #fff;
+    font-size: 10px;
+    padding: 180px 10px;
+    position: absolute;
+}
+
+.showDiv i {
+    font-style: normal;
+    font-size: 8px;
+}
+
+.i {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.i i {
+    font-style: normal;
+    font-size: 7px;
+    display: inline-block;
+    line-height: 13px;
+    padding: 0 4px;
+}
+
+.i i:hover {
+    background: #AEB6A8;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+.citydiv ul .oli span .oli {
+    position: absolute;
+    top: -18px;
+    left: 23px;
+}
+
+.wearing {
+    background: #586676;
+    line-height: 20px;
+    padding: 8px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px #fff inset;
+    margin-top: 100px;
+}
+.wthDiv img{width: 40px;
+}
+.wthDiv img.bigpic{
+    width: 69px;
+    margin: 20px 51px 40px;
+    background: #9D9D9D;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 0 1px #736B6B;
+}
+.ganmao{
+    writing-mode: tb-rl;
+    position: absolute;
+    height: 200px;
+    right: 10px;
+    top: 100px;
+    color:#ABC1D7;
+    font-weight: 600;
+    text-shadow: #222222 1px 1px 2px;
+}
+.wthDiv span{
+    display: inline-block;
+    margin: 5px;
+    background: #000000;
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px #FFFFFF inset;
+}
+.wthDiv span sup{
+    display: block;
+}
+
+
+
