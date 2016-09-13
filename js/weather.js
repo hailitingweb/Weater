@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * Created by hxsd on 2016/9/10.
+=======
+ * Created by hxsd on 2016/9/10.city.json
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
  */
 window.onload = function () {
     var oInpt = document.getElementById("oInp");
@@ -97,6 +101,7 @@ window.onload = function () {
         chsDiv.id="citydiv";
         var xhr = new XMLHttpRequest();
         var chsLi = "<ul>";
+<<<<<<< HEAD
         xhr.open("GET", "js/city.json", true);
         xhr.onreadystatechange = function () {
            if (xhr.readyState == 4 && xhr.status == 200) {
@@ -112,11 +117,32 @@ window.onload = function () {
                         for (var k = 0; k < Pcity[i].city[j].area.length; k++) {
                             chsLi += "<i>" + Pcity[i].city[j].area[k] + "</i>";
                         };
+=======
+        xhr.open("GET", "city.json", true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var Pcity = JSON.parse(xhr.responseText);
+                //省
+                for (var i = 0; i < Pcity.citylist.length; i++) {
+                    chsLi += "<li><h2>" + Pcity.citylist[i].p;
+                    chsLi += "</h2><span>";
+                    for (var j = 0; j < Pcity.citylist[i].c.length; j++) {
+                        chsLi += "<p>" + Pcity.citylist[i].c[j].n + "</p>";
+                        chsLi +="<div class='i'>";
+                        for (var k = 0; k < Pcity.citylist[i].c[j].a.length; k++) {
+                            chsLi += "<i>" + Pcity.citylist[i].c[j].a[k].s + "</i>";
+                        }
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
                         chsLi +="</div>";
                     }
                     chsLi += "</span>";
                     chsLi += "</li>";
+<<<<<<< HEAD
                 };
+=======
+                }
+                ;
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
                 chsLi += "</ul>";
                 chsDiv.innerHTML = chsLi;
             };
@@ -130,6 +156,10 @@ window.onload = function () {
             var cityDiv=document.getElementById("citydiv");
             var chsUlPc = cityDiv.getElementsByTagName("ul")[0];
             var chsLiPc = chsUlPc.getElementsByTagName("li");
+<<<<<<< HEAD
+=======
+            console.log(chsLiPc);
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
             //两级连动
             for (var i = 0; i < chsLiPc.length; i++) {
                 var aP = "";
@@ -166,9 +196,15 @@ window.onload = function () {
                                     getIn.className = "log-in";
                                     showDiv.style.display="block";
                                     showDiv.innerHTML = "<h5>" + chsLiHfont.innerHTML + "</h5><p>"+this.innerHTML+ "</p><i>" + aP + "</i>";
+<<<<<<< HEAD
                                     oDivShov.innerHTML=" ";
                                     oDiv.innerHTML=referTo(aP,oDiv);
                                     console.log(aP);
+=======
+                                    //referTo(chsLiHfont.innerHTML);
+                                    oDivShov.innerHTML=" ";
+                                    oDiv.innerHTML=referTo(chsLiHfont.innerHTML,oDiv);
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
                                 }
                             }
                             return aP;
@@ -190,11 +226,82 @@ window.onload = function () {
         chsCity.style.display="block";
     };
     //-----------------------------------------------------------------
+<<<<<<< HEAD
     //----------------------------------------
     //一开始 杭州的效果
     var bac=document.getElementsByClassName('bac02')[0];
     bac.style.opacity="0";
     bac.style.backgroundSize="200% 130%";
+=======
+    /*function getStyle(obj,styleName){
+        var value=obj.currenStyle ? obj.currentStyle[styleName]:getComputedStyle(obj,false)[styleName];
+        if(styleName=='opacity'){//判断是不是透明度
+            value=Math.round(parseFloat(value)*100);
+        }
+        value=parseInt(value);
+        return value;
+    }
+    function run(obj,moveJson,moveTime){
+        var start={};
+        var dis={};
+        var defaultTime={
+            veryslow:2000,
+            slow:1200,
+            normal:800,
+            fast:400,
+            varyfast:100
+        }
+        if(moveTime){
+            if(typeof moveTime=='string'){
+                moveTime=defaultTime[moveTime];
+            }
+        }
+        for(var key in moveJson){
+            start[key]=getStyle(obj,key);
+            dis[key]=moveJson[key]-start[key];
+        }
+        console.log(start[key],dis[key])
+        var rate=parseInt(moveTime/30);
+        var n=0;
+        clearInterval(obj.text)
+        obj.text=setInterval(function(){
+            n++;
+            for(var key in moveJson){
+                var stepDis=start[key]+dis[key]/rate*n
+                if(key=='opacity'){
+                    obj.style.opacity=stepDis/100;
+                    obj.style.filter='alpha(opacity:'+stepDis+')';
+                }else{
+                    obj.style[key]=start[key]+dis[key]/rate*n+'px';
+                }
+                if(n==rate){
+                    clearInterval(obj.text);
+                    if(key=='opacity'){
+                        obj.style.opacity=stepDis/100;
+                        obj.style.filter='alpha(opacity:'+stepDis+')';
+                    }else{
+                        obj.style[key]=stepDis+'px';// 必须的
+                    }
+
+                }
+            }
+
+        },30)
+    }
+     var form=document.getElementsByTagName("form")[0];
+    cPst.onmouseover= setTimeout(function(){
+        cPstMousclick();
+        form.onmouseout=function(){
+            form.className="";
+        }
+    },1500);
+    function cPstMousclick(){
+        form.className="formmouse";
+        run(form,{opacity:100,right:20},600);
+    };*/
+    //----------------------------------------
+    //一开始 杭州的效果
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
     oDivShov.innerHTML=referTo(oInpt.value,oDivShov);
     function btnClick() {
         document.getElementById("oBtn").onclick = function () {
@@ -206,4 +313,9 @@ window.onload = function () {
     };
     //-------------------------------------------
     btnClick();
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 };

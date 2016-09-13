@@ -11,9 +11,14 @@ div {
 body {
     width: 100%;
     height: 100%;
+<<<<<<< HEAD
    /* background: #000;*/
     color: #744a31;
     zoom: 2;
+=======
+    background: #000;
+    color: #744a31;
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 }
 
 input {
@@ -23,6 +28,7 @@ input {
 ul {
     list-style: none;
 }
+<<<<<<< HEAD
 .toptitle{
     position: absolute;
     bottom: 2px;
@@ -33,6 +39,11 @@ ul {
 }
 .contain {
     overflow: hidden;
+=======
+
+.contain {
+    /*overflow: hidden;*/
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
     position: relative;
     width: 188px;
     height: 333px;
@@ -42,13 +53,17 @@ ul {
 .main{
     width: 188px;
     height: 333px;
+<<<<<<< HEAD
     position: relative;
+=======
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 }
 .bac {
     width: 188px;
     height: 333px;
     background: #999 url("../images/tiankong.jpg");
     background-size: 180% 100%;
+<<<<<<< HEAD
     position: fixed;
     top: 40px;
     z-index: -10;
@@ -68,6 +83,14 @@ ul {
     height: 500px;
     opacity: 0;
 }
+=======
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 #oLoding {
     display: none;
 }
@@ -93,6 +116,7 @@ ul {
 .contain input {
     font-size: 11px;
     line-height: 20px;
+<<<<<<< HEAD
     height: 20px; border-radius: 2px;
 }
 
@@ -102,6 +126,14 @@ ul {
     background: #E9F1E9;
     color: #3A0505;
    
+=======
+    height: 20px;
+}
+
+.contain input#oInp {
+    padding-left: 5px;
+    width: 115px;
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 }
 
 form {
@@ -120,7 +152,11 @@ input#oBtn {
     position: absolute;
     top: 50px;
     left: 14px;
+<<<<<<< HEAD
     background: #fff;
+=======
+    background: #FEF2CA;
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
     border-radius: 4px;
     padding-bottom: 10px;
     box-shadow: 0 0 100px #FFFFFF inset;
@@ -168,16 +204,23 @@ input#oBtn {
 
 .log-in {
     height: 20px;
+<<<<<<< HEAD
 
     width: 188px;
     color: #FEFEEB;
     
+=======
+    background: rgba(12, 13, 13, .8);
+    width: 100%;
+    color: #FEFEEB;
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 }
 
 .log-in > img {
     display: none;
 }
 
+<<<<<<< HEAD
 p.title {
     text-align: center;
     font-size: 12px;
@@ -193,6 +236,15 @@ p.title {
 .log-in h1 {
  display: none;
 }
+=======
+.log-in h1 {
+    font-size: 12px;
+    float: left;
+    line-height: 20px;
+    padding-left: 5px;
+}
+
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 .contain .log-in form {
 
     display: none;
@@ -215,8 +267,11 @@ p.title {
     height: 15px;
     float: right;
     margin: 2px 5px;
+<<<<<<< HEAD
     position: relative;
     z-index: 20;
+=======
+>>>>>>> 9b81de3e364815f32953dbdc135d7d449bdd654e
 }
 
 .wendu {
